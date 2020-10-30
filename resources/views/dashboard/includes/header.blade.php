@@ -1,3 +1,4 @@
+
 <nav
     class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light bg-info navbar-shadow">
     <div class="navbar-wrapper">
@@ -32,7 +33,7 @@
                         <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                 <span class="mr-1">مرجبا
                   <span
-                      class="user-name text-bold-700">  Alaa shareef</span>
+                      class="user-name text-bold-700">  Ahmed Emam</span>
                 </span>
                             <span class="avatar avatar-online">
                   <img  style="height: 35px;" src="" alt="avatar"><i></i></span>
