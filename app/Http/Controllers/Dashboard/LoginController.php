@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\AdminLoginRequset;
+use App\Traits\AuthTrait;
 
 class LoginController extends Controller
 {
+    use AuthTrait;
     public function login(){
      return view('dashboard.auth.login');
     }
@@ -35,8 +37,4 @@ class LoginController extends Controller
         return redirect()->route('admin.login');
     }
 
-    private function getGaurd()
-    {
-        return auth('admin');
-    }
 }
