@@ -20,8 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e099b63-f986-49f8-b9f2-29dead7c14bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Traits/AuthTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProfileRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/CategoryTranslation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/CategoryFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/CategoryDatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/profile/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,24 +169,25 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/en" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/profile" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\ecommerce\resources\lang\en" />
-      <recent name="C:\wamp64\www\ecommerce\resources\lang" />
-      <recent name="C:\wamp64\www\ecommerce\resources\views\dashboard" />
-      <recent name="C:\wamp64\www\ecommerce\resources\views\dashboard\includes\alerts" />
-      <recent name="C:\wamp64\www\ecommerce\resources\views\dashboard\auth" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\ecommerce\app\Models" />
       <recent name="C:\wamp64\www\ecommerce\resources\views\dashboard\includes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\ecommerce\resources\views\dashboard\profile" />
+      <recent name="C:\wamp64\www\ecommerce\app\Http\Requests" />
+      <recent name="C:\wamp64\www\ecommerce\app\Http\Controllers\Dashboard" />
+      <recent name="C:\wamp64\www\ecommerce\resources\lang\en" />
+      <recent name="C:\wamp64\www\ecommerce\resources\lang" />
     </key>
   </component>
   <component name="RunManager">
@@ -216,7 +226,13 @@
       <workItem from="1603897363572" duration="1529000" />
       <workItem from="1603987997897" duration="4028000" />
       <workItem from="1604071361993" duration="5599000" />
-      <workItem from="1604160578509" duration="1832000" />
+      <workItem from="1604160578509" duration="2225000" />
+      <workItem from="1604415816625" duration="5000" />
+      <workItem from="1604844403084" duration="3822000" />
+      <workItem from="1604931644968" duration="2668000" />
+      <workItem from="1604938210967" duration="3000" />
+      <workItem from="1605104427122" duration="6521000" />
+      <workItem from="1605454071066" duration="2685000" />
     </task>
     <servers />
   </component>
@@ -248,10 +264,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603212759171" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1604162238569">
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1605457637592">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1604162238569" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1605457637592" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1603118891131">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
