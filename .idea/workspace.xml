@@ -20,16 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e099b63-f986-49f8-b9f2-29dead7c14bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProfileRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/CategoryTranslation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/CategoryFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/CategoryDatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/profile/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/BrandsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/MainCategoriesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/TagsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/BrandRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/MainCategoryRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/TagsRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Brand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/BrandTranslation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/TagTranslation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/brands/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/brands/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/brands/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/categories/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/tags/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/tags/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/dashboard/tags/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/general.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +59,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -170,9 +185,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/profile" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/rola.html" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -233,6 +249,19 @@
       <workItem from="1604938210967" duration="3000" />
       <workItem from="1605104427122" duration="6521000" />
       <workItem from="1605454071066" duration="2685000" />
+      <workItem from="1605545344436" duration="1746000" />
+      <workItem from="1605715699326" duration="2207000" />
+      <workItem from="1606322901901" duration="939000" />
+      <workItem from="1607786344976" duration="344000" />
+      <workItem from="1607787293474" duration="3668000" />
+      <workItem from="1607872626013" duration="1046000" />
+      <workItem from="1607960212624" duration="1004000" />
+      <workItem from="1608134190658" duration="806000" />
+      <workItem from="1608996463300" duration="3566000" />
+      <workItem from="1609082852870" duration="4364000" />
+      <workItem from="1609256219989" duration="1685000" />
+      <workItem from="1609516000498" duration="4385000" />
+      <workItem from="1609602392027" duration="3069000" />
     </task>
     <servers />
   </component>
@@ -260,21 +289,36 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603119797309" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1603212759171">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1606323079056">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603212759171" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1605457637592">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606323079056" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1605715936117">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1605457637592" />
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1605715936117" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1603118891131">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603118891131" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1603818172064">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1609517627613">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1603818172064" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1609517627613" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605716912042">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605716912042" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/database/migrations/2020_12_26_161430_create_brand_translations_table.php</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
